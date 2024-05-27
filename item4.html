@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan Systemd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header border">
+        <div class="acumalaka">
+            <p class="test">Kelompok 2</p>
+            <nav class="navigasi">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contect.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content-lg">
+            <div class="bagian-kiri">
+                <div class="isi-kiri border">
+                    <br>
+                    <img src="img/item1.png" alt="Profile Picture" class="circle-pp">
+                    <p>Website ini di buat untuk memenuhi tugas mata kuliah Praktikum Pemograman Web</p>
+                    <div class="gray-rule"></div><br>
+                    <h4 style="margin: 0px;">KELOMPOK 2</h4>
+                    <ol style="padding: 0px; list-style: none;">
+                        <li>Michael Fitra</li>
+                        <li>Dipo Oktavian</li>
+                        <li>Rahma Rifki Ananda</li>
+                        <li>Sandi Zikrullah</li>
+                    </ol>
+                    <div class="gray-rule"></div>
+                    <div class="sosial-link-gup">
+                        <a href="https://web.facebook.com/" target="_blank"><img src="icon/facebook.png" alt="fb"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="icon/social.png" alt="ig"></a>
+                        <a href="https://github.com/" target="_blank"><img src="icon/github.png" alt="github"></a>
+                    </div>
+                    <div><br></div>
+                </div>
+            </div>
+            <div class="bagian-kanan">
+                <div class="kelompok-item">
+                    <div class="konten border">
+                        <img src="img/item (4).jpg" alt="item1">
+                        <div class="penuhin">
+                            <h2 style="margin-top: 10px; margin-bottom: 10px;">Pengenalan Systemd</h2>
+                            <p>
+                                Sebagai pengguna Linux pasti sudah mengenal baik sistem booting pada masing-masing distro yang digunakan dan terkadang kita dapat melihat proses dari service-service yang dijalankan melalui sistem booting sehingga dapat mengetahui apakah ada yang failed dijalankan ataukah tidak. Sederhanya yang dimaksud sistem booting yaitu saat kita menyalakan komputer dengan OS linux Windows Mac dan lain sebagainya maka pasti kita melihat tulisan-tulisan yang berjalan hingga prosesnya selesai sampai muncul sistem login user. Nah sistem yang seperti itu adalah menggunakan yang disebut dengan init (tidak semua distro linux menggunakan init) dan sekarang ini ada sistem baru yang akan menggantikannya dengan begitu saat nantinya kita menyalakan komputer Linux tidak akan ada lagi tulisan-tulisan yang muncul akan tetapi langsung ke sistem login user adapun sistem ini dikenal dengan systemd. Untuk lebih lengkapnya dibawah akan kita bahas sedikit tentang init dan systemd.
+                            </p>
+                            <h3 style="margin-top: 6px; margin-bottom: 6px;">Init System</h3>
+                            <p>
+                                init adalah singkatan dari (initialization) inisialisasi saat memulai proses booting maka init bekerja setelah komputer memuat kernel init berperan mengatur dan memulai proses pada sistem yang dimana posisi awal nya adalah PID (1) Process parent dari seluruh cabang proses nya nanti.
+                            </p>
+                            <h3 style="margin-top: 6px; margin-bottom: 6px;">Systemd</h3>
+                            <p>
+                                systemd adalah paket perangkat lunak manajer layanan dan init yang didesain khusus untuk Linux. systemd kompatibel dengan skrip init tradisional sysvinit dan BSD rc.d tetapi perangkat lunak ini dimaksudkan untuk menggantikan cara lama init tradisional menjalankan Linux. Namanya berasal dari prosesnya yang berjalan di latar belakang (daemon) sehingga mengikuti penamaan daemon mirip Unix dengan menambahkan huruf "d" di akhir kata.
+                            </p>
+                            <p>
+                                systemd menyediakan beberapa utilitas seperti:
+                                <ul>
+                                    <li>init</li>
+                                    <li>systemctl (Service Management)</li>
+                                    <li>journalctl (Management Log)</li>
+                                    <li>networkd (Networking Management)</li>
+                                    <li>logind (Login Management)</li>
+                                    <li>dll</li>
+                                </ul>
+                            </p>
+                            <p>
+                                systemd dibuat pada tahun 2010 oleh software engineer dari redhat yaitu Lennart Poettering bersama beberapa developer developer redhat lainnya. Pada perjalanan nya systemd banyak ditolak dan dikecam oleh sebagian pengguna linux karena konsep systemd bertentangan dengan filosofi unix / linux itu sendiri dimana filosofi itu berisi kira kira seperti ini:
+                                <ul>
+                                    <li>Tugas sebuah program adalah melakukan satu hal dan melakukannya dengan baik.</li>
+                                    <li>Sistem yang besar dan kompleks merupakan gabungan dari program-program kecil yang bekerja bersama.</li>
+                                    <li>Teks adalah interface yang universal</li>
+                                    <li>Segalanya di Unix adalah file.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                sedangkan systemd ini mengatur banyak hal sekaligus yang tujuan awalnya untuk memudahkan pengguna tetapi nyatanya bertentangan dengan filosofi dari linux itu sendiri. Ada beberapa utilitas yang bisa digunakan untuk mengatur systemd atau mengatur proses dan layanan yang berjalan daemon di background salah satunya yaitu systemctl, hostnamectl, loginctl, dll. Kekurangan systemd berada pada sistem log yang disimpan berbentuk binnary log yang hanya bisa dibaca menggunakan journalctl yang dimana sebelumnya urusan log pencatatan aktivitas di sistem dikelola syslog atau rsyslog bisa di baca menggunakan banyak tools seperti cat, grep, awk, less, more, tail, dll. Karena systemd mengambil alih banyak tugas di dalam sistem maka kebutuhan resources pada komputer pun meningkat ini membuat komputer-komputer yang berspesifikasi low end menjadi semakin berat.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="javascript:history.back()" class="tombol">Kembali</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

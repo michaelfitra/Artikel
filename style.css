@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e2e2e2;
+}
+
+.nav-bar {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.header{
+    background-color: white;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    padding: 15px;
+    /* z-index: 100; */
+}
+
+.acumalaka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.acumalaka p {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.navigasi a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.content {
+    background-color: transparent;
+    justify-content: center;
+    /* margin: auto; */
+    padding-top: 10px;
+    height: 100vh;
+
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.content-lg {
+    display: flex;
+    align-items: flex-start;
+    /* width: 128vh; */
+    /* margin-left: 20vh;
+    margin-right: 20vh; */
+}
+
+.bagian-kiri {
+    width: 20%;
+    padding: 10px;
+}
+
+.isi-kiri {
+    border-radius: 14px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-kiri p {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bagian-kanan {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    width: 80%;
+    padding: 10px;
+}
+
+.circle-pp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gray-rule {
+    width: 70%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/* .heading.kecil {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+} */
+
+.sosial-link-gup {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sosial-link-gup img {
+    width: 50px;
+    height: 50px;
+}
+
+.kelompok-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 20px;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 14px;
+    width: 96%;
+    display: flex;
+    align-items: center;
+}
+
+.item img {
+    border-radius: 7px;
+    width: 28vh;
+    height: 28vh;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.penuhin {
+    flex: 1 0 38%;
+}
+
+.border {
+    border: 1px solid #BDBDBD;
+}
+
+.clickable-div {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.clickable-div:hover {
+    background-color: #f0f0f0;
+}
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    z-index: 1;
+}
+
+.konten {
+    background-color: white;
+    padding: 20px;
+    border-radius: 14px;
+    width: 96%;
+    overflow: hidden;
+    object-position: center;
+}
+
+.konten img {
+    width: 110%; 
+    height: 40vh; 
+    border: none; 
+    margin-left: -3%; 
+    margin-top: -3%;
+    object-fit: cover;
+    display: block;
+}
+
+/* contact.html */
+
+.konten-kontak {
+    background-color: white;
+    padding: 20px;
+    border-radius: 14px;
+    width: 96%;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 99%;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.tombol {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tombol:hover {
+    background-color: #0056b3;
+}
